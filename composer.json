@@ -1,0 +1,26 @@
+{
+    "name": "shieldgate/sdk-php",
+    "description": "ShieldGate PHP Client",
+    "type": "library",
+    "version": "1.1.0",
+    "authors": [
+        {
+            "name": "Developer Team",
+            "email": "dev@shieldgate.mx"
+        }
+    ],
+    "scripts": {
+        "test": "./vendor/bin/phpunit --bootstrap vendor/autoload.php test/"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Payment\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}
